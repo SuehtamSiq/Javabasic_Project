@@ -1,26 +1,20 @@
+import java.util.Scanner;
+
 public class MinhaClasse {
-    
-public static void main (String [] args) {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in); // Cria um objeto Scanner
 
-        int numeroUm = 9;
-        int numero2 = 10;
-        int numero3 = 8;
-        int mediaNotas = media (numeroUm, numero2, numero3);
+        System.out.println("Vamos somar dois números");
 
-        if (mediaNotas < 6)
-            System.out.println("REPROVADO");
-        else if (mediaNotas == 6)
-            System.out.println("Prova Minerva");
-        else 
-            System.out.println("APROVADO");
+        System.out.print("Digite o primeiro numero: ");
+        int numero1 = scanner.nextInt();
 
-    
+        System.out.print("Digite o segundo numero: ");
+        int numero2 = scanner.nextInt();
 
-}
+        System.out.println("O resultado da soma é: " + (numero1 + numero2));
 
-public static int media (int numeroUm, int numero2, int numero3) {
-    return (numeroUm + numero2 + numero3) / 3;
+        scanner.close(); 
+    }
 
-}
-    
 }
