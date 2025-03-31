@@ -1,4 +1,4 @@
-package exeDio.sintaxeJava.operadores;
+package ExerciciosDio.sintaxeJava.operadores;
 
 public class operadores {
 

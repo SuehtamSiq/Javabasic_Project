@@ -1,4 +1,4 @@
-package exeDio.ContaBanco;
+package ExerciciosDio.ContaBanco;
 
 import java.util.Scanner;
 
@@ -20,7 +20,7 @@ public class ContaTerminal {
         Scanner scanner = new Scanner(System.in); // Cria um objeto Scanner
         
         System.out.print("Por favor, digite o número da Conta: ");
-        int numeroConta = scanner.nextInt();
+        int numeroConta = scanner.nextInt(); 
         
         System.out.print("Por favor, digite o número da Agência: ");
         String agenciaConta = scanner.next();

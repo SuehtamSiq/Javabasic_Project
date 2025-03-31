@@ -1,4 +1,4 @@
-package exeDio.sintaxeJava.tiposVariaveis;
+package ExerciciosDio.sintaxeJava.tiposVariaveis;
 
 public class tiposVariaveis {
 

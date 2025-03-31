@@ -1,4 +1,4 @@
-package exeDio.sintaxeJava.métodos;
+package ExerciciosDio.sintaxeJava.métodos;
 
 import java.util.Scanner;
  
