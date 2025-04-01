@@ -1,4 +1,4 @@
-package ExerciciosDio.Controle_de_Fluxo;
+package ExerciciosDio.EstruturasCondicionais.Controle_de_Fluxo;
 
 public class CaixaEletronico {
     

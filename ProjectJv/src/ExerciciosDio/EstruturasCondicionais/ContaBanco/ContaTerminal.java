@@ -1,4 +1,4 @@
-package ExerciciosDio.ContaBanco;
+package ExerciciosDio.EstruturasCondicionais.ContaBanco;
 
 import java.util.Scanner;
 

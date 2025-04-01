@@ -16,7 +16,7 @@ public class operadores {
 
          /*
           * Operadores ternários são variações que podemos usar do if else,
-          * usando os operadores ?: podemos realizar essas validações condicionais
+          * usando os operadores "? true", ": false" podemos realizar essas validações condicionais
           * em apenas uma linha de código.
           */
         
