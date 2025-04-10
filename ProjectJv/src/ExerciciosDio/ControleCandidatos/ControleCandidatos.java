@@ -1,14 +1,52 @@
 package ExerciciosDio.ControleCandidatos;
 
 
+import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;;
 
 public class ControleCandidatos {
  
     public static void main(String[] args) {
-        System.out.println("Processo Seletivo");    
-        analisarCandidato(1900.0);
+        String candidatos [] = {"FELIPE", "MATHEUS", "MIRELLA", "JOYCE", "CAMILA"};
+        for (String candidato : candidatos){
+            entrandoEmContato(candidato);
+        }
     
+    }
+
+    static void entrandoEmContato(String candidato) {
+        int tentativasRealizadas = 1;
+        boolean continuarTentando = true;
+        boolean atendeu = false;
+
+        do {
+            atendeu = atender();
+            continuarTentando = !atendeu;
+            if (continuarTentando)
+                tentativasRealizadas++;
+            else
+                System.out.println("CONTATO REALIZADO COM SUCESSO!");
+
+
+        }while(continuarTentando && tentativasRealizadas < 3);
+
+        if (atendeu)
+            System.out.println("CONSEGUIMOS CONTATO COM " + candidato + " NA TENTATIVA " + tentativasRealizadas);
+        else
+            System.out.println("NÃO CONSEGUIMOS CONTATO COM O CANDIDATO " + candidato + ", NÚMERO MAXIMO DE TENTAIVAS " + tentativasRealizadas);
+    }
+
+    static boolean atender() {
+        return new Random().nextInt(3)==1;
+    }
+
+    static void imprimirSelecionados() {
+         String candidatos [] = {"FELIPE", "MATHEUS", "MIRELLA", "JOYCE", "CAMILA"};
+
+         for(int indice = 0; indice < candidatos.length; indice++) {
+            System.out.println("O candidato de número " + (indice+1) + " é o candidato " + candidatos[indice]);
+         }
+
     }
 
     static void selecaoCandidatos() {
@@ -18,7 +56,7 @@ public class ControleCandidatos {
         int candidatosSelecionados = 0;
         int candidatoAtual= 0;
         double salarioBase = 2000.0;
-        while(candidatosSelecionados < 5){
+        while(candidatosSelecionados < 5 && candidatoAtual < candidatos.length){
             String candidato = candidatos[candidatoAtual];
             double salarioPretendido = valorPretendido();
 
