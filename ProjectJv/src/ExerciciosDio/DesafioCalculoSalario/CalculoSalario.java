@@ -15,13 +15,13 @@ public class CalculoSalario {
 
         double valorImposto = 0.0;
         if (valorSalario >= 0 && valorSalario <= 1100) {
-            valorImposto = 0.05f * valorSalario;
+            valorImposto = 0.05 * valorSalario;
         }
         else if (valorSalario >=1100.01 && valorSalario <=2500) {
-            valorImposto = 0.10f * valorSalario;
+            valorImposto = 0.10 * valorSalario;
         }
         else {
-            valorImposto = 0.15f * valorSalario;
+            valorImposto = 0.15 * valorSalario;
         }
 
         double saida = valorSalario - valorImposto + valorBeneficios;
