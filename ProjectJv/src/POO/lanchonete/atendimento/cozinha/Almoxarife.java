@@ -1,6 +1,7 @@
 package POO.lanchonete.atendimento.cozinha;
 
 public class Almoxarife {
+
     private void controlarEntrada() {
         System.out.println("CONTROLANDO ENTRADA DOS ITENS");
     }
